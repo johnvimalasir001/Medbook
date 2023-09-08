@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
                     height: 250,
                     width: double.infinity,
                     decoration: const BoxDecoration(
-                        color: Colors.brown,
+                        color: Colors.white,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(50),
                         )),
@@ -36,14 +36,14 @@ class HomePage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 34,
                               fontWeight: FontWeight.w700,
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: Colors.black,
                             ),
                           ),
                           IconButton(
                             onPressed: () {},
                             icon: const Icon(Icons.search),
-                            color: Colors.white,
-                            iconSize: 35,
+                            color: Colors.black,
+                            iconSize: 28,
                           ),
                         ],
                       ),
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                             'Trending',
                             style: TextStyle(
                                 fontSize: 20,
-                                color: Color.fromARGB(255, 197, 255, 200),
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           ),
                         ),

@@ -95,14 +95,18 @@ class _BookreviewState extends State<Bookreview> with TickerProviderStateMixin {
                       tabs: const [
                         Tab(text: 'Description'),
                         Tab(
-                          text: 'Revied(50)',
+                          text: 'Revied(3)',
                         ),
                       ],
                     ),
-                    TabBarView(controller: tabController, children: const [
-                      FirstTab(),
-                      SecondTab(),
-                    ]),
+                    Expanded(
+                      child: TabBarView(
+                          controller: tabController,
+                          children: const [
+                            FirstTab(),
+                            SecondTab(),
+                          ]),
+                    ),
                   ],
                 ),
               ),

@@ -8,11 +8,14 @@ class FirstTab extends StatelessWidget {
     return DefaultTabController(
       length: 10,
       child: Container(
-        height: 30,
+        height: 10,
         width: double.infinity,
-        color: Colors.black,
+        color: Colors.yellow.shade50,
         child: const Text(
-            'Siddha medicine is developed in pre ayurvedic period withcivilization of Mohenzadaro and Harappa in the Indus river valley around 10,000 years back.'),
+          'Siddha medicine is developed in pre ayurvedic period withcivilization of Mohenzadaro and Harappa in the Indus river valley around 10,000 years back.',
+          style: TextStyle(
+              fontWeight: FontWeight.w800, wordSpacing: 2, fontSize: 18),
+        ),
       ),
     );
   }
