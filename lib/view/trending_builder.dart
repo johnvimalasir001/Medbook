@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:medbook/view/trending.dart';
+import 'package:medbook/datas/datas.dart';
+import 'package:medbook/view/Trending.dart';
 
 class TrendingBuilder extends StatelessWidget {
   const TrendingBuilder({super.key});
@@ -11,9 +12,15 @@ class TrendingBuilder extends StatelessWidget {
       child: ListView.builder(
           physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
-          itemCount: 10,
+          itemCount: 8,
           itemBuilder: (context, index) {
-            return const Trending();
+            return TrendingPage(
+              imgurl: popularBooks[index]["imgUrl"],
+              booksname: popularBooks[index]["bookName"],
+              authorname: popularBooks[index]["author"],
+              price: popularBooks[index]["price"],
+              values: popularBooks[index]["rating"],
+            );
           }),
     );
   }

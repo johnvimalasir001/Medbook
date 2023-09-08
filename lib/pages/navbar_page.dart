@@ -14,16 +14,24 @@ class NavBarPage extends StatefulWidget {
 
 class _NavBarPageState extends State<NavBarPage> {
   int selectedindex = 0;
+  void _onItemTapped(int index) {
+    if (index != 2) {
+      setState(() {
+        selectedindex = index;
+      });
+    } else {
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (context) => const ForumPage()),
+      );
+    }
+  }
+
   List pages = [
     const HomePage(),
     const ECommercePage(),
     const ForumPage(),
-    const Scaffold(
-      backgroundColor: Colors.blue,
-    ),
-    const Scaffold(
-      backgroundColor: Colors.red,
-    ),
+    const MyBooksPage(),
+    const ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -32,7 +40,7 @@ class _NavBarPageState extends State<NavBarPage> {
         backgroundColor: bgColor,
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          onTap: (index) => setState(() => selectedindex = index),
+          onTap: _onItemTapped,
           currentIndex: selectedindex,
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.black54,

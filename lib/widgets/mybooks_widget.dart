@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:medbook/themes/colors.dart';
 
 // ignore: must_be_immutable
-class PopularListWidget extends StatelessWidget {
-  String imageUrl;
-  String bookName;
-  String authorName;
-  String price;
-  PopularListWidget({
+class MyBooksWidget extends StatelessWidget {
+  final String imageUrl;
+  final String bookName;
+  final String authorName;
+  final String purchasedate;
+  const MyBooksWidget({
     super.key,
     required this.imageUrl,
     required this.authorName,
     required this.bookName,
-    required this.price,
+    required this.purchasedate,
   });
 
   @override
@@ -40,13 +40,17 @@ class PopularListWidget extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 5),
+                    child: Text('Purchased on $purchasedate'),
+                  ),
                   Text(
                     overflow: TextOverflow.ellipsis,
                     bookName,
                     style: const TextStyle(
                         color: headingColor,
                         fontSize: 20,
-                        fontWeight: FontWeight.w400),
+                        fontWeight: FontWeight.w600),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 5),
@@ -57,22 +61,6 @@ class PopularListWidget extends StatelessWidget {
                           fontSize: 15,
                           fontWeight: FontWeight.w400),
                     ),
-                  ),
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.currency_rupee,
-                        color: headingColor,
-                        size: 20,
-                      ),
-                      Text(
-                        price,
-                        style: const TextStyle(
-                            color: headingColor,
-                            fontSize: 20,
-                            fontWeight: FontWeight.w400),
-                      ),
-                    ],
                   ),
                 ],
               ),

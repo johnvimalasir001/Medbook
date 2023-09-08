@@ -6,3 +6,4 @@ const headingColor = Color.fromRGBO(8, 8, 8, 0.825);
 const subheadingColor = Color.fromRGBO(127, 127, 127, 1);
 const highlightColor = Color.fromRGBO(28, 64, 193, 1);
 const navbaractiveColor = Color.fromRGBO(34, 33, 35, 255);
+const msgcontainer = Color.fromRGBO(91, 98, 179, 1);

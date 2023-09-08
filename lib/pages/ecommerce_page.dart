@@ -13,6 +13,7 @@ class ECommercePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
@@ -21,7 +22,6 @@ class ECommercePage extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(
-                        // left: 20,
                         top: 15,
                         bottom: 10,
                       ),
@@ -37,16 +37,14 @@ class ECommercePage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                    // horizontal: 15,
                     vertical: 10,
                   ),
                   child: Container(
                     height: 48,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
+                      color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    // padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: 'Search...',

@@ -3,3 +3,4 @@ export 'bestsellerlist_widget.dart';
 export 'popularlist_widget.dart';
 export 'stardisplay_widget.dart';
 export 'messageconatiner_widget.dart';
+export 'mybooks_widget.dart';
