@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: const NavBarPage(),
       theme: ThemeData(
-        fontFamily: 'Publica Sans Round',
+        fontFamily: 'poppins',
       ),
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,

@@ -12,9 +12,12 @@ class CategoriesBuilder extends StatelessWidget {
   ];
   final List categoryname = ['Ayurveda', 'Siddha', 'Unani', 'Homeopathy'];
   final List colors = [
-    Colors.orange.shade100,
-    Colors.yellow.shade100,
-    Colors.green.shade50,
+    // Colors.orange.shade100,
+    // Colors.yellow.shade100,
+    // Colors.green.shade50,
+    Colors.brown.shade50,
+    Colors.brown.shade50,
+    Colors.brown.shade50,
     Colors.brown.shade50,
   ];
   @override

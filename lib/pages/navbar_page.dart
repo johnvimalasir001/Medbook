@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medbook/pages/pages.dart';
 import 'package:medbook/themes/colors.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../view/home_page.dart';
 
@@ -55,7 +54,7 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               label: 'E-Book',
               icon: Icon(
-                MdiIcons.cart,
+                Icons.shopping_cart,
                 size: 30,
               ),
             ),
@@ -69,7 +68,7 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               label: 'My Books',
               icon: Icon(
-                MdiIcons.library,
+                Icons.book_outlined,
                 size: 30,
               ),
             ),

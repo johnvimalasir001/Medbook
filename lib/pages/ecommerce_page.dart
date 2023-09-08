@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medbook/datas/datas.dart';
 import 'package:medbook/themes/colors.dart';
+import 'package:medbook/view/book_review.dart';
 import 'package:medbook/widgets/widgets.dart';
 
 class ECommercePage extends StatelessWidget {
@@ -120,7 +121,14 @@ class ECommercePage extends StatelessWidget {
                     return Column(
                       children: [
                         GestureDetector(
-                          onTap: (() {}),
+                          onTap: (() {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const Bookreview(),
+                              ),
+                            );
+                          }),
                           child: PopularListWidget(
                             imageUrl: popularBooks[index]["imgUrl"],
                             bookName: popularBooks[index]["bookName"],
