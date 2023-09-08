@@ -22,16 +22,16 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green.shade100,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.black,
         elevation: 0,
         toolbarHeight: 100,
         leadingWidth: 200,
         leading: const Padding(
-          padding: const EdgeInsets.symmetric(vertical: 33.0, horizontal: 20),
+          padding: EdgeInsets.symmetric(vertical: 33.0, horizontal: 20),
           child: Text(
             "My Profile",
-            style: TextStyle(
-                color: Colors.white, fontSize: 25, fontWeight: FontWeight.w800),
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800),
           ),
         ),
         actions: [
@@ -51,7 +51,7 @@ class ProfilePage extends StatelessWidget {
           ),
         ],
       ),
-      backgroundColor: Colors.green.shade100,
+      backgroundColor: Colors.grey[150],
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
@@ -98,7 +98,7 @@ class ProfilePage extends StatelessWidget {
                 children: [
                   Container(
                     height: 100,
-                    width: 180,
+                    width: 160,
                     decoration: BoxDecoration(
                         boxShadow: const [
                           BoxShadow(
@@ -140,7 +140,7 @@ class ProfilePage extends StatelessWidget {
                   ),
                   Container(
                     height: 100,
-                    width: 180,
+                    width: 160,
                     decoration: BoxDecoration(
                         boxShadow: const [
                           BoxShadow(
@@ -202,8 +202,9 @@ class ProfilePage extends StatelessWidget {
                             height: 40,
                             width: 40,
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                color: Colors.pink),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Image.asset(profileDetails[0]['imgUrl']),
                           ),
                           const SizedBox(width: 20),
                           const Text(
@@ -213,7 +214,7 @@ class ProfilePage extends StatelessWidget {
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500),
                           ),
-                          const SizedBox(width: 70),
+                          const Spacer(),
                           IconButton(
                             onPressed: () {},
                             icon: const Icon(
@@ -239,9 +240,7 @@ class ProfilePage extends StatelessWidget {
                           Container(
                             height: 40,
                             width: 40,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                color: Colors.pink),
+                            child: Image.asset(profileDetails[1]['imgUrl']),
                           ),
                           const SizedBox(width: 20),
                           const Text(
@@ -251,7 +250,7 @@ class ProfilePage extends StatelessWidget {
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500),
                           ),
-                          const SizedBox(width: 120),
+                          const Spacer(),
                           IconButton(
                             onPressed: () {},
                             icon: const Icon(
@@ -278,8 +277,9 @@ class ProfilePage extends StatelessWidget {
                             height: 40,
                             width: 40,
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                color: Colors.pink),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Image.asset(profileDetails[2]['imgUrl']),
                           ),
                           const SizedBox(width: 20),
                           const Text(
@@ -289,7 +289,7 @@ class ProfilePage extends StatelessWidget {
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500),
                           ),
-                          const SizedBox(width: 200),
+                          const Spacer(),
                           IconButton(
                             onPressed: () {},
                             icon: const Icon(

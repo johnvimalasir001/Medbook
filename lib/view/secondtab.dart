@@ -28,6 +28,14 @@ class SecondTab extends StatelessWidget {
                 'john : this book is good start up for beginners',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
+              Text(
+                'sundar : it is very useful book for beginner in siddha',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+              Text(
+                'sanjay : this book is good start up for beginners',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
             ],
           ),
         ),

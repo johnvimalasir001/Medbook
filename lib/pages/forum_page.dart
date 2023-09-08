@@ -41,59 +41,102 @@ class ForumPage extends StatelessWidget {
           ],
         ),
         backgroundColor: Colors.white,
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                child: Row(
-                  children: [
-                    const CircleAvatar(
-                      radius: 15,
-                      backgroundImage: NetworkImage(
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCumxxL8tT6GBGXYZj9wlwEldhAEFkvyvO9g&usqp=CAU'),
-                    ),
-                    const SizedBox(width: 15),
-                    const Text(
-                      "John Vimal Asir",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18,
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  child: Row(
+                    children: [
+                      const CircleAvatar(
+                        radius: 15,
+                        backgroundImage: NetworkImage(
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCumxxL8tT6GBGXYZj9wlwEldhAEFkvyvO9g&usqp=CAU'),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                      child: Text(
-                        "Today at 9:30 PM",
+                      const SizedBox(width: 15),
+                      const Text(
+                        "John Vimal Asir",
                         style: TextStyle(
-                          color: Colors.grey[600],
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
-                child: Text(
-                  "Hii",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 17,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Text(
+                          "Today at 9:30 PM",
+                          style: TextStyle(
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ),
-              SizedBox(
-                child: Row(
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
+                  child: Text(
+                    "Hii",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 17,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  child: Row(
+                    children: [
+                      const CircleAvatar(
+                        radius: 15,
+                        backgroundImage: NetworkImage(
+                          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/800px-Pierre-Person.jpg',
+                        ),
+                      ),
+                      const SizedBox(width: 15),
+                      const Text(
+                        "Sudharsan",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Text(
+                          "Today at 9:31 PM",
+                          style: TextStyle(
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
+                  child: Text(
+                    "Which is best Ayush or Unani ?",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 17,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                Row(
                   children: [
                     const CircleAvatar(
                       radius: 15,
                       backgroundImage: NetworkImage(
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/800px-Pierre-Person.jpg',
-                      ),
+                          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/800px-Pierre-Person.jpg'),
                     ),
                     const SizedBox(width: 15),
                     const Text(
@@ -107,7 +150,7 @@ class ForumPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Text(
-                        "Today at 9:31 PM",
+                        "Today at 9:35 PM",
                         style: TextStyle(
                           color: Colors.grey[600],
                         ),
@@ -115,66 +158,25 @@ class ForumPage extends StatelessWidget {
                     ),
                   ],
                 ),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
-                child: Text(
-                  "Which is best Ayush or Unani ?",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              Row(
-                children: [
-                  const CircleAvatar(
-                    radius: 15,
-                    backgroundImage: NetworkImage(
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/800px-Pierre-Person.jpg'),
-                  ),
-                  const SizedBox(width: 15),
-                  const Text(
-                    "Sudharsan",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 18,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                    child: Text(
-                      "Today at 9:35 PM",
-                      style: TextStyle(
-                        color: Colors.grey[600],
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 40, vertical: 8),
+                  child: Container(
+                    height: 250,
+                    width: 180,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: const DecorationImage(
+                        image: NetworkImage(
+                          'https://www.akinik.com/images/IMG_20181214_115100_BCP.jpg',
+                        ),
+                        fit: BoxFit.fill,
                       ),
                     ),
                   ),
-                ],
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 8),
-                child: Container(
-                  height: 250,
-                  width: 180,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    image: const DecorationImage(
-                      image: NetworkImage(
-                        'https://www.akinik.com/images/IMG_20181214_115100_BCP.jpg',
-                      ),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

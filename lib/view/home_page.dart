@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:medbook/pages/pages.dart';
+import 'package:medbook/pages/search_page.dart';
+import 'package:medbook/view/book_review.dart';
 import 'package:medbook/view/categories_bilder.dart';
 import 'package:medbook/view/trending_builder.dart';
 
@@ -33,15 +36,23 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            'Hi Sudharsan',
+                            'Hi, Sudharsan',
                             style: TextStyle(
+                              fontFamily: 'poppins',
                               fontSize: 34,
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w500,
                               color: Colors.black,
                             ),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute<void>(
+                                    builder: (BuildContext context) =>
+                                        const ECommercePage(),
+                                  ));
+                            },
                             icon: const Icon(Icons.search),
                             color: Colors.black,
                             iconSize: 28,
@@ -50,22 +61,33 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 130),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 130),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 20, bottom: 10),
                           child: Text(
                             'Trending',
                             style: TextStyle(
+                                fontFamily: 'poppins',
                                 fontSize: 20,
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Center(child: TrendingBuilder()),
+                        Center(
+                            child: GestureDetector(
+                          child: const TrendingBuilder(),
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute<void>(
+                              builder: (BuildContext context) =>
+                                  const Bookreview(),
+                            ),
+                          ),
+                        )),
                       ],
                     ),
                   ),
@@ -78,7 +100,11 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
                   'Categories',
-                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: 'poppins',
+                  ),
                 ),
               ),
               CategoriesBuilder()

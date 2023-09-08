@@ -51,7 +51,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 30,
               ),
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               label: 'E-Book',
               icon: Icon(
                 Icons.shopping_cart,
@@ -65,7 +65,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 30,
               ),
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               label: 'My Books',
               icon: Icon(
                 Icons.book_outlined,

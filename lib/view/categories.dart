@@ -17,8 +17,11 @@ class Categories extends StatelessWidget {
         height: 120,
         width: 150,
         decoration: BoxDecoration(
-            color: colors,
-            borderRadius: const BorderRadius.all(Radius.circular(22))),
+          color: colors,
+          borderRadius: const BorderRadius.all(
+            Radius.circular(22),
+          ),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -32,7 +35,11 @@ class Categories extends StatelessWidget {
             ),
             Text(
               categoryname,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+                fontFamily: 'poppins',
+              ),
             ),
           ],
         ),
